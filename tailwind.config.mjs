@@ -23,16 +23,23 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#800000", // maroon
-        secondary: "#555555", // abu lembut untuk teks sekunder
-        accent: "#DC143C", // crimson
-        border: "#d7d7d7",
+        /* BRAND */
+        primary: "#0ea5e9",   // sky-500 → warna utama (biru muda)
+        secondary: "#64748b", // slate-500 → teks sekunder (adem & modern)
+        accent: "#0284c7",    // sky-600 → CTA / hover / fokus
+
+        /* BACKGROUND */
+        cream: "#f8f5ef",     // krim premium (background utama)
+        soft: "#f0f9ff",      // sky-50 (section ringan)
+
+        /* UTIL */
+        border: "#e5e7eb",    // netral border
       },
       boxShadow: {
-        custom: "0px 4px 54px 10px rgba(128, 0, 0, 0.06)",
+        custom: "0px 10px 40px rgba(14, 165, 233, 0.12)", // glow biru lembut
       },
       backgroundImage: {
-        hero: "url('/assets/img/hero/bg.jpg')",
+        hero: "linear-gradient(135deg, #e0f2fe 0%, #f8f5ef 100%)",
       },
     },
   },
