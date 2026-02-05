@@ -24,7 +24,8 @@ export default function Header() {
           .from("profiles")
           .select("role")
           .eq("id", currentUser.id)
-          .single();
+          .maybeSingle();
+
 
         setRole(profile?.role || "user");
       } else {
